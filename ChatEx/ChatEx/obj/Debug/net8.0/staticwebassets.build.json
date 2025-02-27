@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8JUYTJPwO6YG/swHE7FwqKhT1szzfB3MQ8d/XHP3HTc=",
+  "Hash": "9xJvSb4BlgCdtskl+aNWHb9Aet7sohNiXGk+vK6/0fA=",
   "Source": "ChatEx",
   "BasePath": "_content/ChatEx",
   "Mode": "Default",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Identity": "/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/wwwroot/css/animations.css",
+      "SourceId": "ChatEx",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/wwwroot/",
+      "BasePath": "_content/ChatEx",
+      "RelativePath": "css/animations.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/animations.css"
     },
     {
       "Identity": "/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/wwwroot/css/global.css",

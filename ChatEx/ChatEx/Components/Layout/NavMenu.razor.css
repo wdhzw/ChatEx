@@ -111,53 +111,70 @@
     background-color: var(--sidebar-bg);
     color: white;
     width: 250px;
+    overflow: hidden;
 }
 
 .nav-header {
-    padding: 15px;
+    padding: var(--spacing-lg);
 }
 
 .logo-area {
-    margin-bottom: 20px;
+    margin-bottom: var(--spacing-lg);
 }
 
 .login-btn {
     width: 100%;
-    padding: 10px;
+    padding: var(--spacing-md);
     background-color: #ffd700;
     color: #333;
     border: none;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     cursor: pointer;
     font-weight: bold;
+    transition: var(--transition);
+}
+
+.login-btn:hover {
+    background-color: #f0c800;
+    transform: translateY(-1px);
 }
 
 .nav-items {
     flex: 1;
     overflow-y: auto;
+    padding: 0 var(--spacing-sm);
 }
 
 .nav-item {
     display: flex;
     align-items: center;
-    padding: 12px 15px;
+    padding: var(--spacing-md) var(--spacing-lg);
     color: #e0e0e0;
     text-decoration: none;
-    transition: background-color 0.2s;
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-sm);
+    transition: var(--transition);
 }
 
 .nav-item:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.nav-item.active {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--sidebar-hover);
     color: white;
 }
 
+.nav-item.active {
+    background-color: var(--sidebar-active);
+    color: white;
+    font-weight: 500;
+}
+
 .nav-icon {
-    margin-right: 12px;
+    margin-right: var(--spacing-md);
     font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
 }
 
 .nav-text {
@@ -166,5 +183,5 @@
 
 .nav-footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 10px;
+    padding: var(--spacing-md) var(--spacing-sm);
 }

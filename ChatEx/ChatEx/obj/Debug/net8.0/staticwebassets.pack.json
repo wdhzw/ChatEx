@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
     },
     {
+      "Id": "/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/wwwroot/css/animations.css",
+      "PackagePath": "staticwebassets/css/animations.css"
+    },
+    {
       "Id": "/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/wwwroot/css/global.css",
       "PackagePath": "staticwebassets/css/global.css"
     },

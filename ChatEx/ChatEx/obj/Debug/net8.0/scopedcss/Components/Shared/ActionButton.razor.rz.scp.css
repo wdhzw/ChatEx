@@ -1,15 +1,24 @@
 .action-button[b-que90j250t] {
-    padding: 8px 15px;
+    padding: var(--spacing-sm) var(--spacing-lg);
     border: none;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     cursor: pointer;
-    font-weight: bold;
-    background-color: #f0f0f0;
-    color: #333;
+    font-weight: 500;
+    background-color: #f3f4f6;
+    color: var(--text-primary);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
 }
 
 .action-button:hover[b-que90j250t] {
-    background-color: #e0e0e0;
+    background-color: #e5e7eb;
+    transform: translateY(-1px);
+}
+
+.action-button:active[b-que90j250t] {
+    transform: translateY(0);
 }
 
 .action-button.primary[b-que90j250t] {
