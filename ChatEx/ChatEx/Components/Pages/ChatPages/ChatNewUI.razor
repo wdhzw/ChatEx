@@ -2,71 +2,41 @@
 @rendermode InteractiveServer
 @inject ChatEx.ViewModels.ChatExViewModel vm
 
+<div class="chat-container">
+    <PageHeader Title="流式对话" />
 
-<h3 class="title">ChatStream</h3>
-
-<div class="chat-container" width="100%" height="100%">
     <!-- 历史消息区域 -->
     @if (vm.HistoryMeesageList.Count > 0)
     {
         <div class="history-messages">
-            <ul>
-                @foreach (var item in vm.HistoryMeesageList)
-                {
-                    <li class="message-item">
-                        <!-- 消息标题 -->
-                        <div class="message-title">
-                            <strong>@item.Title</strong>
-                        </div>
+            @foreach (var item in vm.HistoryMeesageList)
+            {
+                <MessageCard 
+                    Title="@item.Title" 
+                    ThinkingProcess="@item.ThinkingProcess" 
+                    Content="@item.OutPutContent" />
+            }
+        </div>
+    }
 
-                        <!-- 思考过程 -->
-                        <div class="thinking-process">
-                            <p>@item.ThinkingProcess</p>
-                        </div>
-
-                        <!-- 输出内容 -->
-                        <div class="message-content">
-                            <p>@item.OutPutContent</p>
-                        </div>
-                    </li>
-                }
-            </ul>
+    <!-- 当前消息区域 -->
+    @if (!string.IsNullOrEmpty(vm.ThinkingProcess))
+    {
+        <div class="current-message">
+            <div class="message-title">@vm.Ques</div>
+            <div class="thinking-process">@vm.ThinkingProcess</div>
+            @if (!string.IsNullOrEmpty(vm.OutPutContent))
+            {
+                <div class="message-content">@vm.OutPutContent</div>
+            }
         </div>
     }
 
     <!-- 输入区域 -->
-    <div class="input-area">
-        <textarea @bind="vm.Ques"
-                  id="inputFilter"
-                  placeholder="请输入问题"
-                  class="auto-height-textarea"
-                  @bind:event="oninput"></textarea>
-        <button class="btn btn-send" @onclick="SendQuestion">发送</button>
-    </div>
-
-    <!-- 当前消息区域 -->
-    <div class="current-message">
-        @if (!string.IsNullOrEmpty(vm.ThinkingProcess))
-        {
-            <!-- 问题 -->
-            <div class="message-title">
-                <strong>@vm.Ques</strong>
-            </div>
-
-            <!-- 思考过程 -->
-            <div class="thinking-process">
-                <p>@vm.ThinkingProcess</p>
-            </div>
-
-            <!-- 输出内容 -->
-            @if (!string.IsNullOrEmpty(vm.OutPutContent))
-            {
-                <div class="message-content">
-                    <p>@vm.OutPutContent</p>
-                </div>
-            }
-        }
-    </div>
+    <ChatInput 
+        InputText="@vm.Ques" 
+        InputTextChanged="@((value) => vm.Ques = value)"
+        OnSend="SendQuestion" />
 </div>
 
 <style>
@@ -167,7 +137,7 @@
     }
 
     /* 发送按钮 */
-    .btn-send {
+    .btn-primary {
         background-color: #007bff;
         color: white;
         padding: 10px 20px;
@@ -177,7 +147,7 @@
         font-size: 1rem;
     }
 
-        .btn-send:hover {
+        .btn-primary:hover {
             background-color: #0056b3;
         }
 

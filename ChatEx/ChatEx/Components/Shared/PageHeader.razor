@@ -1,0 +1,20 @@
+<div class="page-header">
+    <h3 class="page-title">@Title</h3>
+    @if (ShowActions)
+    {
+        <div class="action-buttons">
+            @ChildContent
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public string Title { get; set; } = "";
+
+    [Parameter]
+    public bool ShowActions { get; set; } = false;
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+} 

@@ -1,0 +1,32 @@
+.translate-container[b-jllgzdqw22] {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--content-bg);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.translate-content[b-jllgzdqw22] {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .translate-content[b-jllgzdqw22] {
+        flex-direction: row;
+    }
+}
+
+.result-content[b-jllgzdqw22] {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: var(--shadow);
+    min-height: 200px;
+    white-space: pre-wrap;
+    line-height: 1.5;
+} 

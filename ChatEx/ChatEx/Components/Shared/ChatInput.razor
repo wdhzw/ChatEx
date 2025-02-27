@@ -1,0 +1,45 @@
+<div class="input-area">
+    <textarea @bind="InputText"
+              @oninput="@((e) => UpdateInputText((string)e.Value))"
+              placeholder="@Placeholder"
+              class="message-input"></textarea>
+    <button class="send-button" @onclick="OnSendClick">
+        @SendIcon
+    </button>
+</div>
+
+@code {
+    [Parameter]
+    public string InputText { get; set; } = "";
+
+    [Parameter]
+    public EventCallback<string> InputTextChanged { get; set; }
+
+    [Parameter]
+    public string Placeholder { get; set; } = "请输入您的问题...";
+
+    [Parameter]
+    public string SendIcon { get; set; } = "发送";
+
+    [Parameter]
+    public EventCallback OnSend { get; set; }
+
+    private async Task OnSendClick()
+    {
+        if (!string.IsNullOrWhiteSpace(InputText) && OnSend.HasDelegate)
+        {
+            await OnSend.InvokeAsync();
+            // 发送后可以选择清空输入框
+            // await UpdateInputText("");
+        }
+    }
+
+    private async Task UpdateInputText(string value)
+    {
+        InputText = value;
+        if (InputTextChanged.HasDelegate)
+        {
+            await InputTextChanged.InvokeAsync(InputText);
+        }
+    }
+} 

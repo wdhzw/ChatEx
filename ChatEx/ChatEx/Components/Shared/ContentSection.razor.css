@@ -1,0 +1,29 @@
+.content-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-header {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
+
+.section-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-body :deep(.text-area) {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    resize: vertical;
+    min-height: 200px;
+    font-family: inherit;
+    flex: 1;
+} 

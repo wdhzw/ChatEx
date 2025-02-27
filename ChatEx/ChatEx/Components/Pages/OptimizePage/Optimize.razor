@@ -1,96 +1,152 @@
 ﻿@page "/optimize"
 @rendermode InteractiveServer
-<h3>文本优化</h3>
 
+<div class="optimize-container">
+    <div class="optimize-header">
+        <h3>文本优化</h3>
+    </div>
 
-<div>
-    <textarea @bind="Ques"
-              id="inputFilter"
-              placeholder="请输入您要优化的文本"
-              class="auto-height-textarea auto-resize-textarea"
-              @bind:event="oninput"></textarea>
+    <div class="optimize-content">
+        <div class="input-section">
+            <div class="section-label">原始文本</div>
+            <textarea @bind="Ques"
+                      placeholder="请输入需要优化的文本内容..."
+                      class="text-area"
+                      @bind:event="oninput"></textarea>
+            
+            <div class="optimize-options">
+                <div class="option-item">
+                    <input type="checkbox" id="grammar" />
+                    <label for="grammar">语法修正</label>
+                </div>
+                <div class="option-item">
+                    <input type="checkbox" id="style" />
+                    <label for="style">风格优化</label>
+                </div>
+                <div class="option-item">
+                    <input type="checkbox" id="concise" />
+                    <label for="concise">简洁表达</label>
+                </div>
+            </div>
+            
+            <button class="optimize-button" @onclick=ChooseLan>优化文本</button>
+        </div>
+
+        <div class="output-section">
+            <div class="section-label">优化结果</div>
+            <div class="result-content">
+                <p class="placeholder-text">优化后的文本将显示在这里...</p>
+            </div>
+        </div>
+    </div>
 </div>
-<button class="btn btn-success" @onclick=ChooseLan>优化</button>
 
 <style>
-    .auto-height-textarea {
-        width: 100%; /* 占满父容器宽度 */
-        max-width: 800px; /* 父容器较宽时不超过 800px */
-        white-space: pre-wrap; /* 允许自动换行 */
-        word-wrap: break-word; /* 长单词换行 */
-        overflow-y: auto; /* 内容超出时显示滚动条 */
-        min-height: 80px; /* 初始最小高度 */
-        resize: vertical; /* 允许用户手动调整高度 */
-    }
-
-    .chat-output {
+    .optimize-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
         background-color: #f9f9f9;
-        padding: 10px;
-        border-radius: 5px;
-        max-height: 300px;
-        overflow-y: auto;
+        border-radius: 10px;
+        overflow: hidden;
     }
 
-        .chat-output p {
-            margin: 5px 0;
-            padding: 5px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 3px;
-            white-space: pre-wrap; /* 保留换行符 */
-        }
+    .optimize-header {
+        padding: 15px 20px;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
 
-    .title {
-        font-size: 24px;
-        font-weight: bold;
+    .optimize-header h3 {
+        margin: 0;
         color: #333;
-        margin-bottom: 20px;
     }
 
-    /* 按钮样式 */
-    .btn-primary {
-        background-color: #007bff;
-        color: white;
+    .optimize-content {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    @@media (min-width: 768px) {
+        .optimize-content {
+            flex-direction: row;
+        }
+    }
+
+    .input-section, .output-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .section-label {
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #333;
+    }
+
+    .text-area {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        resize: vertical;
+        min-height: 200px;
+        font-family: inherit;
+    }
+
+    .optimize-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .option-item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .optimize-button {
         padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        font-weight: bold;
+        align-self: flex-start;
     }
 
-        .btn-primary:hover {
-            background-color: #0056b3;
-        }
+    .optimize-button:hover {
+        background-color: #3d8b40;
+    }
 
-    /* 聊天输出区域 */
-    .chat-output {
-        background-color: #f9f9f9;
+    .result-content {
+        background-color: white;
+        border-radius: 8px;
         padding: 15px;
-        border-radius: 5px;
-        margin-top: 20px;
-        max-height: 400px;
-        overflow-y: auto;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        min-height: 200px;
+        white-space: pre-wrap;
+        line-height: 1.5;
     }
 
-    /* 段落样式 */
-    .paragraph {
-        font-size: 16px;
-        line-height: 1.6;
-        color: #444;
-        margin-bottom: 10px;
-    }
-
-    /* 加载提示 */
-    .text-center {
-        text-align: center;
+    .placeholder-text {
+        color: #999;
+        font-style: italic;
     }
 </style>
 
 @code {
-
-    private string Ques;
+    private string Ques = string.Empty;
 
     private void ChooseLan()
     {
-
+        // 实现优化逻辑
     }
 }

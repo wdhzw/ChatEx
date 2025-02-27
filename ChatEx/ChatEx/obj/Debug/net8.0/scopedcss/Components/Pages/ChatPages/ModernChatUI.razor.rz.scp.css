@@ -1,0 +1,212 @@
+/* 容器样式 */
+.chat-container[b-it6huqnogf] {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 聊天区域样式 */
+.chat-area[b-it6huqnogf] {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-bg);
+    border-right: 1px solid var(--border-color);
+}
+
+.chat-history[b-it6huqnogf] {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.input-wrapper[b-it6huqnogf] {
+    padding: 15px;
+    border-top: 1px solid var(--border-color);
+}
+
+.input-area[b-it6huqnogf] {
+    display: flex;
+    align-items: flex-end;
+}
+
+.message-input[b-it6huqnogf] {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    resize: none;
+    height: 100px;
+    font-family: inherit;
+}
+
+.send-button[b-it6huqnogf] {
+    margin-left: 10px;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.saved-prompts[b-it6huqnogf] {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: var(--text-secondary);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* 设置区域样式 */
+.settings-area[b-it6huqnogf] {
+    width: 300px;
+    background-color: var(--content-bg);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.model-header[b-it6huqnogf] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.model-name[b-it6huqnogf] {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.clear-icon[b-it6huqnogf] {
+    cursor: pointer;
+}
+
+.knowledge-base[b-it6huqnogf] {
+    margin-bottom: 20px;
+}
+
+.toggle-label[b-it6huqnogf] {
+    margin-bottom: 10px;
+}
+
+.toggle-wrapper[b-it6huqnogf] {
+    margin-bottom: 10px;
+}
+
+.toggle[b-it6huqnogf] {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.toggle input[b-it6huqnogf] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-slider[b-it6huqnogf] {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.toggle-slider[b-it6huqnogf]:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+input:checked + .toggle-slider[b-it6huqnogf] {
+    background-color: var(--primary-color);
+}
+
+input:checked + .toggle-slider[b-it6huqnogf]:before {
+    transform: translateX(30px);
+}
+
+.knowledge-manage-btn[b-it6huqnogf] {
+    padding: 8px 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.model-selection[b-it6huqnogf], .parameter-setting[b-it6huqnogf] {
+    margin-top: 20px;
+}
+
+.selection-label[b-it6huqnogf], .parameter-header[b-it6huqnogf] {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.selection-description[b-it6huqnogf], .parameter-description[b-it6huqnogf] {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+}
+
+.model-dropdown[b-it6huqnogf] {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.selected-model[b-it6huqnogf] {
+    display: flex;
+    align-items: center;
+}
+
+.star-icon[b-it6huqnogf] {
+    color: #ffd700;
+    margin-right: 8px;
+}
+
+.dropdown-icon[b-it6huqnogf] {
+    margin-left: auto;
+}
+
+.parameter[b-it6huqnogf] {
+    margin-bottom: 20px;
+}
+
+.parameter-header[b-it6huqnogf] {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parameter-value[b-it6huqnogf] {
+    font-weight: normal;
+}
+
+.parameter-slider[b-it6huqnogf] {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.stop-token-input[b-it6huqnogf] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+} 

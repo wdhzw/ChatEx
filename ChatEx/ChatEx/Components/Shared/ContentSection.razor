@@ -1,0 +1,14 @@
+<div class="content-section">
+    <div class="section-header">@Title</div>
+    <div class="section-body">
+        @ChildContent
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Title { get; set; } = "";
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+} 

@@ -1,0 +1,40 @@
+.input-area {
+    display: flex;
+    padding: 15px 20px;
+    background-color: var(--card-bg);
+    border-top: 1px solid var(--border-color);
+    gap: 10px;
+}
+
+.message-input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    resize: none;
+    min-height: 50px;
+    max-height: 150px;
+    font-family: inherit;
+}
+
+.send-button {
+    padding: 0 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+}
+
+.send-button:hover {
+    background-color: var(--primary-hover);
+}
+
+.send-icon {
+    font-size: 1rem;
+} 

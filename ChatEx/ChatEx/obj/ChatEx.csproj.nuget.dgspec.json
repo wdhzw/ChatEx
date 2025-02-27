@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\ChatEx.csproj": {}
+    "/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/ChatEx.csproj": {}
   },
   "projects": {
-    "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\ChatEx.csproj": {
+    "/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/ChatEx.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\ChatEx.csproj",
+        "projectUniqueName": "/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/ChatEx.csproj",
         "projectName": "ChatEx",
-        "projectPath": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\ChatEx.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\obj\\",
+        "projectPath": "/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/ChatEx.csproj",
+        "packagesPath": "/Users/hzw/.nuget/packages/",
+        "outputPath": "/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\0_Application\\VisualStudio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/hzw/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,13 +32,7 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -99,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet@8/8.0.13/libexec/sdk/8.0.113/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

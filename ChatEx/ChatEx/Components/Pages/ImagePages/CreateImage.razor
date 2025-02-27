@@ -5,99 +5,165 @@
 @inject IJSRuntime JS 
 @rendermode InteractiveServer
 
-<h3>CreateImage</h3>
+<div class="image-container">
+    <div class="image-header">
+        <h3>AI 图像生成</h3>
+    </div>
 
-<!-- 输入区域 -->
-<div class="input-area">
-    <textarea @bind="vm.Describe"
-              id="inputFilter"
-              placeholder="请输入图片描述"
-              class="auto-height-textarea"
-              @bind:event="oninput"></textarea>
+    <div class="image-content">
+        <!-- 输入区域 -->
+        <div class="input-section">
+            <div class="input-label">图像描述</div>
+            <textarea @bind="vm.Describe"
+                      placeholder="请详细描述您想要生成的图像内容..."
+                      class="image-input"
+                      @bind:event="oninput"></textarea>
+            
+            <div class="button-group">
+                <button class="generate-button" @onclick="GenerateImage">创建图片</button>
+                @if (vm.ImageData.Length > 0)
+                {
+                    <button class="clear-button" @onclick="vm.Declare">清空</button>
+                }
+            </div>
+        </div>
+
+        <!-- 图像预览区域 -->
+        @if (vm.ImageData.Length > 0)
+        {
+            <div class="image-preview">
+                <div class="preview-label">生成的图像</div>
+                <div class="image-wrapper">
+                    <img src="data:image/png;base64,@Convert.ToBase64String(vm.ImageData)" alt="Generated Image" />
+                </div>
+            </div>
+        }
+    </div>
 </div>
-<p></p>
-<button class="btn btn-send" @onclick="GenerateImage">创建图片</button>&nbsp;&nbsp;
-
-
-
-
-@if (vm.ImageData.Length > 0)
-{
-    <button class="btn btn-dark" @onclick="vm.Declare">清空</button>
-    <p></p>
-    <img src="data:image/png;base64,@Convert.ToBase64String(vm.ImageData)" alt="Generated Image" />
-    @* <div>
-        <h4>Generated Image</h4>
-        <img src="data:image/png;base64,@Convert.ToBase64String(vm.ImageData)" alt="Generated Image" />
-        <button @onclick="DownloadImage">Download as PNG</button>
-        <button @onclick="DownloadImageAsJpg">Download as JPG</button>
-    </div> *@
-}
 
 <style>
-    /* 输入区域 */
-    .input-area {
+    .image-container {
         display: flex;
-        gap: 10px;
-        margin-top: 20px;
+        flex-direction: column;
+        height: 100%;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        overflow: hidden;
     }
-    /* 文本框 */
-    .auto-height-textarea {
+
+    .image-header {
+        padding: 15px 20px;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .image-header h3 {
+        margin: 0;
+        color: #333;
+    }
+
+    .image-content {
         flex: 1;
-        padding: 10px;
-        font-size: 1rem;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    @@media (min-width: 768px) {
+        .image-content {
+            flex-direction: row;
+        }
+    }
+
+    .input-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .input-label, .preview-label {
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #333;
+    }
+
+    .image-input {
+        width: 100%;
+        padding: 12px;
         border: 1px solid #ddd;
         border-radius: 5px;
         resize: vertical;
-        min-height: 80px;
-        max-height: 200px;
-        overflow-y: auto;
+        min-height: 150px;
+        font-family: inherit;
     }
-    /* 发送按钮 */
-    .btn-send {
-        background-color: #007bff;
-        color: white;
+
+    .button-group {
+        display: flex;
+        gap: 10px;
+    }
+
+    .generate-button, .clear-button {
         padding: 10px 20px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .generate-button {
+        background-color: #4caf50;
+        color: white;
+    }
+
+    .generate-button:hover {
+        background-color: #3d8b40;
+    }
+
+    .clear-button {
+        background-color: #f0f0f0;
+        color: #333;
+    }
+
+    .clear-button:hover {
+        background-color: #e0e0e0;
+    }
+
+    .image-preview {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .image-wrapper {
+        background-color: white;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-wrapper img {
+        max-width: 100%;
+        max-height: 400px;
+        border-radius: 5px;
     }
 </style>
 
 @code {
-
     private async Task GenerateImage()
     {
         await vm.GenerateImageAsync();
-    }
-
-    private void DownloadImage()
-    {
-        DownloadFile(vm.ImageData, "generated-image.png", "image/png");
-    }
-
-    private void DownloadImageAsJpg()
-    {
-        var jpgData = vm.ConvertToJpg(vm.ImageData);
-        DownloadFile(jpgData, "generated-image.jpg", "image/jpeg");
-    }
-
-    private void DownloadFile(byte[] data, string fileName, string mimeType)
-    {
-        var fileContent = new System.Net.Http.ByteArrayContent(data);
-        var fileStream = new System.IO.MemoryStream(data);
-        var js = JS.InvokeAsync<object>("saveAsFile", fileName, Convert.ToBase64String(data));
-
-        var base64Data = Convert.ToBase64String(data);
-        //await JS.InvokeAsync<object>(fileName, base64Data); // 使用 InvokeVoidAsync
     }
 
     protected override void OnInitialized()
     {
         // 通知更新UI事件处理函数
         vm.UpdateUIEventHandler += UpdateUI;
-
         vm.Declare();
     }
 
@@ -106,7 +172,6 @@
     {
         await InvokeAsync(() => StateHasChanged());
     }
-
 
     // 通知更新UI事件处理函数
     private async void UpdateUI(object sender, EventArgs e)

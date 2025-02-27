@@ -1,0 +1,19 @@
+<button class="@GetButtonClass()" @onclick="OnClick">
+    @ChildContent
+</button>
+
+@code {
+    [Parameter]
+    public bool IsPrimary { get; set; } = false;
+
+    [Parameter]
+    public EventCallback OnClick { get; set; }
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    private string GetButtonClass()
+    {
+        return IsPrimary ? "action-button primary" : "action-button";
+    }
+} 

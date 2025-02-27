@@ -1,0 +1,22 @@
+.action-button[b-que90j250t] {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.action-button:hover[b-que90j250t] {
+    background-color: #e0e0e0;
+}
+
+.action-button.primary[b-que90j250t] {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.action-button.primary:hover[b-que90j250t] {
+    background-color: var(--primary-hover);
+} 

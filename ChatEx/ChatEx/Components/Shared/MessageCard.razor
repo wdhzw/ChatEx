@@ -1,0 +1,19 @@
+<div class="message-card">
+    <div class="message-title">@Title</div>
+    @if (!string.IsNullOrEmpty(ThinkingProcess))
+    {
+        <div class="thinking-process">@ThinkingProcess</div>
+    }
+    <div class="message-content">@((MarkupString)Content)</div>
+</div>
+
+@code {
+    [Parameter]
+    public string Title { get; set; } = "";
+
+    [Parameter]
+    public string ThinkingProcess { get; set; } = "";
+
+    [Parameter]
+    public string Content { get; set; } = "";
+} 

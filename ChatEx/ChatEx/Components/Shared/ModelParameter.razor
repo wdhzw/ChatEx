@@ -1,0 +1,56 @@
+<div class="parameter">
+    <div class="parameter-header">
+        <div class="parameter-label">@Label</div>
+        @if (ShowValue && Type == "range")
+        {
+            <div class="parameter-value">@Value</div>
+        }
+    </div>
+    
+    <div class="parameter-description">@Description</div>
+    
+    @if (Type == "range")
+    {
+        <input type="range" 
+               min="@Min" 
+               max="@Max" 
+               step="@Step" 
+               value="@Value" 
+               class="parameter-slider" />
+    }
+    else if (Type == "text")
+    {
+        <input type="text" 
+               placeholder="@Placeholder" 
+               class="parameter-input" />
+    }
+</div>
+
+@code {
+    [Parameter]
+    public string Label { get; set; } = "";
+
+    [Parameter]
+    public string Description { get; set; } = "";
+
+    [Parameter]
+    public string Type { get; set; } = "range";
+
+    [Parameter]
+    public string Value { get; set; } = "0";
+
+    [Parameter]
+    public bool ShowValue { get; set; } = true;
+
+    [Parameter]
+    public string Min { get; set; } = "0";
+
+    [Parameter]
+    public string Max { get; set; } = "1";
+
+    [Parameter]
+    public string Step { get; set; } = "0.1";
+
+    [Parameter]
+    public string Placeholder { get; set; } = "";
+} 

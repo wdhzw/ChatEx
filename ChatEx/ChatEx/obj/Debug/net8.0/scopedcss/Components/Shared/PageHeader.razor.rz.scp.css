@@ -1,0 +1,19 @@
+.page-header[b-kpm4ktdhpa] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.page-title[b-kpm4ktdhpa] {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+}
+
+.action-buttons[b-kpm4ktdhpa] {
+    display: flex;
+    gap: 10px;
+} 

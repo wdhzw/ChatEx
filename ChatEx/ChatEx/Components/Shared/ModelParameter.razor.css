@@ -1,0 +1,45 @@
+.parameter {
+    margin-bottom: 20px;
+}
+
+.parameter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.parameter-label {
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+.parameter-value {
+    color: var(--text-secondary);
+}
+
+.parameter-description {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+}
+
+.parameter-slider {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.parameter-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.stop-token-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+} 

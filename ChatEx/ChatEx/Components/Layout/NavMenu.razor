@@ -1,64 +1,124 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">ChatEx</a>
+﻿<div class="nav-container">
+    <div class="nav-header">
+        <div class="logo-area">
+            <button class="login-btn">点击登录</button>
+        </div>
+    </div>
+
+    <div class="nav-items">
+        <NavLink class="nav-item" href="chatex" Match="NavLinkMatch.All">
+            <span class="nav-icon">💬</span>
+            <span class="nav-text">新建会话</span>
+        </NavLink>
+        
+        <NavLink class="nav-item" href="createimage">
+            <span class="nav-icon">🖼️</span>
+            <span class="nav-text">新建绘图</span>
+        </NavLink>
+        
+        <NavLink class="nav-item" href="chatex1">
+            <span class="nav-icon">📄</span>
+            <span class="nav-text">会话助理</span>
+        </NavLink>
+        
+        <NavLink class="nav-item" href="translate">
+            <span class="nav-icon">🌐</span>
+            <span class="nav-text">翻译助理</span>
+        </NavLink>
+        
+        <NavLink class="nav-item" href="optimize">
+            <span class="nav-icon">✏️</span>
+            <span class="nav-text">文本优化</span>
+        </NavLink>
+        
+        <NavLink class="nav-item" href="createfile">
+            <span class="nav-icon">📊</span>
+            <span class="nav-text">PPT生成</span>
+        </NavLink>
+        
+        <NavLink class="nav-item" href="modernchat">
+            <span class="nav-icon">🤖</span>
+            <span class="nav-text">现代界面</span>
+        </NavLink>
+    </div>
+
+    <div class="nav-footer">
+        <div class="nav-item">
+            <span class="nav-icon">⭐</span>
+            <span class="nav-text">升级会员</span>
+        </div>
+        
+        <div class="nav-item">
+            <span class="nav-icon">🔄</span>
+            <span class="nav-text">模型对抗</span>
+        </div>
     </div>
 </div>
 
-<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+<style>
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background-color: #1a1a1a;
+        color: white;
+        width: 250px;
+    }
 
-<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
-    <nav class="flex-column">
-        @* 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
+    .nav-header {
+        padding: 15px;
+    }
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="chatex">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> ChatEx
-            </NavLink>
-        </div>
- *@
+    .logo-area {
+        margin-bottom: 20px;
+    }
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="chatex">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> ChatEx
-            </NavLink>
-        </div>
-    
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="chatex1">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> 会话
-            </NavLink>
-        </div>
+    .login-btn {
+        width: 100%;
+        padding: 10px;
+        background-color: #ffd700;
+        color: #333;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="createimage">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> 图片
-            </NavLink>
-        </div>
+    .nav-items {
+        flex: 1;
+        overflow-y: auto;
+    }
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="translate">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> 翻译
-            </NavLink>
-        </div>
+    .nav-item {
+        display: flex;
+        align-items: center;
+        padding: 12px 15px;
+        color: #e0e0e0;
+        text-decoration: none;
+        transition: background-color 0.2s;
+    }
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="optimize">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> 文本优化
-            </NavLink>
-        </div>
+    .nav-item:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="createfile">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> 生成PPT
-            </NavLink>
-        </div>
+    .nav-item.active {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+    }
 
+    .nav-icon {
+        margin-right: 12px;
+        font-size: 18px;
+    }
 
-    </nav>
-</div>
+    .nav-text {
+        font-size: 14px;
+    }
+
+    .nav-footer {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 10px;
+    }
+</style>
 

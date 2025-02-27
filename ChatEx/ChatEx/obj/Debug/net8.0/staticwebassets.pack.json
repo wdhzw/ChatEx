@@ -1,47 +1,47 @@
 {
   "Files": [
     {
-      "Id": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ChatEx.bundle.scp.css",
-      "PackagePath": "staticwebassets\\ChatEx.qxxw8gd5on.bundle.scp.css"
+      "Id": "/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/obj/Debug/net8.0/scopedcss/projectbundle/ChatEx.bundle.scp.css",
+      "PackagePath": "staticwebassets/ChatEx.bundle.scp.css"
     },
     {
-      "Id": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\wwwroot\\app.css",
-      "PackagePath": "staticwebassets\\app.css"
+      "Id": "/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
     },
     {
-      "Id": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\wwwroot\\bootstrap\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+      "Id": "/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
     },
     {
-      "Id": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\wwwroot\\bootstrap\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+      "Id": "/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Id": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\wwwroot\\favicon.png",
-      "PackagePath": "staticwebassets\\favicon.png"
+      "Id": "/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/wwwroot/css/global.css",
+      "PackagePath": "staticwebassets/css/global.css"
     },
     {
-      "Id": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\wwwroot\\js\\fileDownload.js",
-      "PackagePath": "staticwebassets\\js\\fileDownload.js"
+      "Id": "/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ChatEx.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
-      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+      "Id": "/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/wwwroot/js/fileDownload.js",
+      "PackagePath": "staticwebassets/js/fileDownload.js"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ChatEx.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.ChatEx.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ChatEx.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.ChatEx.props",
       "PackagePath": "build\\ChatEx.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ChatEx.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.ChatEx.props",
       "PackagePath": "buildMultiTargeting\\ChatEx.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ChatEx.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.ChatEx.props",
       "PackagePath": "buildTransitive\\ChatEx.props"
     }
   ],

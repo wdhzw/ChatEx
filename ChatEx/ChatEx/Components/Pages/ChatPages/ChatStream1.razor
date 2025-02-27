@@ -2,169 +2,59 @@
 @inject ChatEx.ViewModels.ChatExViewModel vm
 @rendermode InteractiveServer
 
-<h3>ChatStream1</h3>
+<div class="chat-container">
+    <PageHeader Title="智能对话" />
 
-@if (vm.HistoryMeesageList.Count > 0)
-{
-    <div>
-        <div style="height: 300px; overflow-y: auto;">
-            <ul>
-                @foreach (var item in vm.HistoryMeesageList)
-                {
-                    <li>
-                        <div>
-                            <div style="font-weight: 900; font-size: 1.2rem;">
-                                <p>     @item.Title</p>
-                            </div>
-                        </div>
-                        <div>
-                            @* 过程 *@
-                            <div style="background-color: #f0f0f0; padding: 10px; font-style: italic; font-size: 0.9rem;">
-                                <p>     @item.ThinkingProcess</p>
-                            </div>
-                        </div>
-                        <div>
-                            @* 答复 *@
-                            <div class="chat-output">
-                                <p>     @item.OutPutContent</p>
-                            </div>
-                        </div>
-                        <p></p>
-                        <p></p>
-                    </li>
-
-                }
-            </ul>
+    <!-- 历史消息区域 -->
+    @if (vm.HistoryMeesageList.Count > 0)
+    {
+        <div class="history-messages">
+            @foreach (var item in vm.HistoryMeesageList)
+            {
+                <MessageCard 
+                    Title="@item.Title" 
+                    ThinkingProcess="@item.ThinkingProcess" 
+                    Content="@item.OutPutContent" />
+            }
         </div>
-    </div>
-}
+    }
 
-
-
-<div>
-    <textarea @bind="vm.Ques"
-        id="inputFilter"
-        placeholder="请输入问题"
-        class="auto-height-textarea auto-resize-textarea"
-        @bind:event="oninput">
-    </textarea>
-</div>
-
-
-<button class="btn btn-success" @onclick="@SendQuestion">发送</button>
-@* <button class="btn btn-success" @onclick="@vm.TestList">测试</button> *@
-
-<div class="output">
+    <!-- 当前消息区域 -->
     @if (!string.IsNullOrEmpty(vm.ThinkingProcess))
     {
-        @* 问题 *@
-        <div>
-            <div style="font-weight: 900; font-size: 1.2rem;">
-                <p>     @vm.Ques</p>
-            </div>
+        <div class="current-message">
+            <div class="message-title">@vm.Ques</div>
+            <div class="thinking-process">@vm.ThinkingProcess</div>
+            @if (!string.IsNullOrEmpty(vm.OutPutContent))
+            {
+                <div class="message-content">@vm.OutPutContent</div>
+            }
         </div>
-
-        @* 过程 *@
-        <div>
-            <div style="background-color: #f0f0f0; padding: 10px; font-style: italic; font-size: 0.9rem;">
-                <p>     @vm.ThinkingProcess</p>
-            </div>
-        </div>
-
-        @* 输出 *@
-        if (!string.IsNullOrEmpty(vm.OutPutContent))
-        {
-            <div class="chat-output">
-                <p class="paragraph">@vm.OutPutContent</p>
-            </div>
-        }
     }
+
+    <!-- 输入区域 -->
+    <ChatInput 
+        InputText="@vm.Ques" 
+        InputTextChanged="@((value) => vm.Ques = value)"
+        OnSend="SendQuestion" />
 </div>
 
-
-<style>
-    .auto-height-textarea {
-        width: 100%; /* 占满父容器宽度 */
-        max-width: 800px; /* 父容器较宽时不超过 800px */
-        white-space: pre-wrap; /* 允许自动换行 */
-        word-wrap: break-word; /* 长单词换行 */
-        overflow-y: auto; /* 内容超出时显示滚动条 */
-        min-height: 80px; /* 初始最小高度 */
-        resize: vertical; /* 允许用户手动调整高度 */
-    }
-    .chat-output {
-        background-color: #f9f9f9;
-        padding: 10px;
-        border-radius: 5px;
-        max-height: 300px;
-        overflow-y: auto;
-    }
-    .chat-output p {
-        margin: 5px 0;
-        padding: 5px;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        border-radius: 3px;
-        white-space: pre-wrap; /* 保留换行符 */
-    }
-
-    .title {
-        font-size: 24px;
-        font-weight: bold;
-        color: #333;
-        margin-bottom: 20px;
-    }
-
-    /* 按钮样式 */
-    .btn-primary {
-        background-color: #007bff;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-        .btn-primary:hover {
-            background-color: #0056b3;
-        }
-
-    /* 聊天输出区域 */
-    .chat-output {
-        background-color: #f9f9f9;
-        padding: 15px;
-        border-radius: 5px;
-        margin-top: 20px;
-        max-height: 400px;
-        overflow-y: auto;
-    }
-
-    /* 段落样式 */
-    .paragraph {
-        font-size: 16px;
-        line-height: 1.6;
-        color: #444;
-        margin-bottom: 10px;
-    }
-
-    /* 加载提示 */
-    .text-center {
-        text-align: center;
-    }
-</style>
-
 @code {
-
     private async Task SendQuestion()
     {
-        await vm.SendQuestion();
+        if (!string.IsNullOrWhiteSpace(vm.Ques))
+        {
+            await vm.SendQuestion();
+            // 可以选择在这里清空问题
+            // vm.Ques = string.Empty;
+            // StateHasChanged();
+        }
     }
 
     protected override void OnInitialized()
     {
         // 通知更新UI事件处理函数
         vm.UpdateUIEventHandler += UpdateUI;
-
         vm.Declare();
     }
 
@@ -173,7 +63,6 @@
     {
         await InvokeAsync(() => StateHasChanged());
     }
-
 
     // 通知更新UI事件处理函数
     private async void UpdateUI(object sender, EventArgs e)

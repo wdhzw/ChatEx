@@ -1,0 +1,32 @@
+<div class="toggle-container">
+    @if (!string.IsNullOrEmpty(Label))
+    {
+        <div class="toggle-label">@Label</div>
+    }
+    <div class="toggle-wrapper">
+        <label class="toggle">
+            <input type="checkbox" checked="@IsChecked" @onchange="OnToggleChanged" />
+            <span class="toggle-slider"></span>
+        </label>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Label { get; set; } = "";
+
+    [Parameter]
+    public bool IsChecked { get; set; } = false;
+
+    [Parameter]
+    public EventCallback<bool> IsCheckedChanged { get; set; }
+
+    private async Task OnToggleChanged(ChangeEventArgs e)
+    {
+        IsChecked = (bool)(e.Value ?? false);
+        if (IsCheckedChanged.HasDelegate)
+        {
+            await IsCheckedChanged.InvokeAsync(IsChecked);
+        }
+    }
+} 

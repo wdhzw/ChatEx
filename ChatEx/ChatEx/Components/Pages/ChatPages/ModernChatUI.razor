@@ -1,0 +1,135 @@
+@page "/modernchat"
+@rendermode InteractiveServer
+@inject ChatEx.ViewModels.ChatExViewModel vm
+
+<div class="chat-container">
+    <div class="chat-area">
+        <!-- 历史聊天记录 -->
+        <div class="chat-history">
+            @if (vm.HistoryMeesageList.Count > 0)
+            {
+                @foreach (var item in vm.HistoryMeesageList)
+                {
+                    <MessageCard Title="@item.Title" Content="@item.OutPutContent" />
+                }
+            }
+        </div>
+
+        <!-- 输入区域 -->
+        <div class="input-wrapper">
+            <div class="input-area">
+                <textarea @bind="vm.Ques"
+                          placeholder="请输入您的系统prompt，如：您来扮演我的私人助理..."
+                          class="message-input"
+                          @bind:event="oninput"></textarea>
+                <button class="send-button" @onclick="SendQuestion">
+                    <span class="send-icon">📤</span>
+                </button>
+            </div>
+            <div class="saved-prompts">
+                <span>已保存的prompt</span>
+                <span class="dropdown-icon">▼</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 右侧设置区域 -->
+    <div class="settings-area">
+        <div class="model-info">
+            <div class="model-header">
+                <span class="model-name">4o-mini</span>
+                <span class="clear-icon">✖</span>
+            </div>
+            
+            <div class="knowledge-base">
+                <div class="toggle-label">是否使用知识库</div>
+                <div class="toggle-wrapper">
+                    <label class="toggle">
+                        <input type="checkbox">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <button class="knowledge-manage-btn">知识库管理</button>
+            </div>
+            
+            <div class="model-selection">
+                <div class="selection-label">模型选择</div>
+                <div class="selection-description">用于指定要使用的AI大模型</div>
+                <div class="model-dropdown">
+                    <div class="selected-model">
+                        <span class="star-icon">⭐</span>
+                        <span>4o-mini</span>
+                        <span class="dropdown-icon">▼</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="parameter-setting">
+                <ModelParameter 
+                    Label="文本多样性" 
+                    Value="1" 
+                    Description="数值越大文本多样性会导致随机性增加的文本，而较低的文本多样性会使生成的文本更加确定性。"
+                    Min="0"
+                    Max="2"
+                    Step="0.1" />
+                
+                <ModelParameter 
+                    Label="回复文本最大长度" 
+                    Value="0" 
+                    Description="用于限制生成的文本的最大长度，以避免生成过长的回复"
+                    Min="0"
+                    Max="2000"
+                    Step="100" />
+                
+                <ModelParameter 
+                    Label="停止标记" 
+                    Type="text" 
+                    ShowValue="false"
+                    Description="当模型生成的文本中包含停止标记时，会停止生成一步的文本。"
+                    Placeholder="输入停止标记" />
+                
+                <ModelParameter 
+                    Label="词汇范围" 
+                    Value="0.6" 
+                    Description="通过设置一个值限制模型使用的词汇来源的限制范围"
+                    Min="0"
+                    Max="1"
+                    Step="0.1" />
+                
+                <ModelParameter 
+                    Label="词汇重复度" 
+                    Value="0" 
+                    Description="防止模型输出重复的内容，越高越不会重复"
+                    Min="0"
+                    Max="1"
+                    Step="0.1" />
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private async Task SendQuestion()
+    {
+        await vm.SendQuestion();
+    }
+
+    protected override void OnInitialized()
+    {
+        // 通知更新UI事件处理函数
+        vm.UpdateUIEventHandler += UpdateUI;
+        vm.Declare();
+    }
+
+    // 更新UI
+    private async Task UpdateUI()
+    {
+        await InvokeAsync(() => StateHasChanged());
+    }
+
+    // 通知更新UI事件处理函数
+    private async void UpdateUI(object sender, EventArgs e)
+    {
+        await InvokeAsync(() => StateHasChanged());
+    }
+} 

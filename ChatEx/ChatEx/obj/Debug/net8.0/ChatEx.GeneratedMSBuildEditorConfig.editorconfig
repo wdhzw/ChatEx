@@ -13,65 +13,95 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ChatEx
 build_property.RootNamespace = ChatEx
-build_property.ProjectDir = E:\01Software\mycode\my\Learning\Blazor\ChatEx\ChatEx\
+build_property.ProjectDir = /Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\01Software\mycode\my\Learning\Blazor\ChatEx\ChatEx
+build_property.MSBuildProjectDirectory = /Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[E:/01Software/mycode/my/Learning/Blazor/ChatEx/ChatEx/Components/App.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+[/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/01Software/mycode/my/Learning/Blazor/ChatEx/ChatEx/Components/Pages/ChatPages/ChatNewUI.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaGF0UGFnZXNcQ2hhdE5ld1VJLnJhem9y
+[/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/01Software/mycode/my/Learning/Blazor/ChatEx/ChatEx/Components/Pages/ChatPages/ChatStream1.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaGF0UGFnZXNcQ2hhdFN0cmVhbTEucmF6b3I=
+[/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/Components/Pages/FilePages/CreateFile.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9GaWxlUGFnZXMvQ3JlYXRlRmlsZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/01Software/mycode/my/Learning/Blazor/ChatEx/ChatEx/Components/Pages/Error.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+[/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/01Software/mycode/my/Learning/Blazor/ChatEx/ChatEx/Components/Pages/FilePages/CreateFile.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGaWxlUGFnZXNcQ3JlYXRlRmlsZS5yYXpvcg==
+[/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/Components/Pages/ImagePages/CreateImage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9JbWFnZVBhZ2VzL0NyZWF0ZUltYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/01Software/mycode/my/Learning/Blazor/ChatEx/ChatEx/Components/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+[/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/Components/Pages/OptimizePage/Optimize.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9PcHRpbWl6ZVBhZ2UvT3B0aW1pemUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/01Software/mycode/my/Learning/Blazor/ChatEx/ChatEx/Components/Pages/ImagePages/CreateImage.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbWFnZVBhZ2VzXENyZWF0ZUltYWdlLnJhem9y
+[/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/01Software/mycode/my/Learning/Blazor/ChatEx/ChatEx/Components/Pages/OptimizePage/Optimize.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPcHRpbWl6ZVBhZ2VcT3B0aW1pemUucmF6b3I=
+[/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/01Software/mycode/my/Learning/Blazor/ChatEx/ChatEx/Components/Pages/TranslatePages/TranslateText.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUcmFuc2xhdGVQYWdlc1xUcmFuc2xhdGVUZXh0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
+[/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-6ft3f42ncg
 
-[E:/01Software/mycode/my/Learning/Blazor/ChatEx/ChatEx/Components/Routes.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
+[/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-hcn1g6yiue
 
-[E:/01Software/mycode/my/Learning/Blazor/ChatEx/ChatEx/Components/_Imports.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
+[/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/Components/Pages/ChatPages/ChatNewUI.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DaGF0UGFnZXMvQ2hhdE5ld1VJLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-0rspypnb5e
 
-[E:/01Software/mycode/my/Learning/Blazor/ChatEx/ChatEx/Components/Layout/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-p4tv5lk6tn
+[/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/Components/Pages/ChatPages/ChatStream1.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DaGF0UGFnZXMvQ2hhdFN0cmVhbTEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-pn532l0ecs
 
-[E:/01Software/mycode/my/Learning/Blazor/ChatEx/ChatEx/Components/Layout/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-47b74ou1i1
+[/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/Components/Pages/ChatPages/ModernChatUI.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DaGF0UGFnZXMvTW9kZXJuQ2hhdFVJLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-it6huqnogf
+
+[/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/Components/Pages/TranslatePages/TranslateText.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9UcmFuc2xhdGVQYWdlcy9UcmFuc2xhdGVUZXh0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-jllgzdqw22
+
+[/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/Components/Shared/ActionButton.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TaGFyZWQvQWN0aW9uQnV0dG9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-que90j250t
+
+[/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/Components/Shared/ChatInput.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TaGFyZWQvQ2hhdElucHV0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-sl1q0sx0l7
+
+[/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/Components/Shared/ContentSection.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TaGFyZWQvQ29udGVudFNlY3Rpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-kks2uusui7
+
+[/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/Components/Shared/MessageCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TaGFyZWQvTWVzc2FnZUNhcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-zpbo6s93tk
+
+[/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/Components/Shared/ModelParameter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TaGFyZWQvTW9kZWxQYXJhbWV0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-lyyjm7m7ui
+
+[/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/Components/Shared/PageHeader.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TaGFyZWQvUGFnZUhlYWRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-kpm4ktdhpa
+
+[/Users/hzw/Desktop/projects/chatex/ChatEx/ChatEx/Components/Shared/ToggleSwitch.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TaGFyZWQvVG9nZ2xlU3dpdGNoLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-h2rs0shvre
