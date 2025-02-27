@@ -1,0 +1,116 @@
+﻿@page "/createimage"
+
+@using ChatEx.ViewModels
+@inject ImageViewModel vm
+@inject IJSRuntime JS 
+@rendermode InteractiveServer
+
+<h3>CreateImage</h3>
+
+<!-- 输入区域 -->
+<div class="input-area">
+    <textarea @bind="vm.Describe"
+              id="inputFilter"
+              placeholder="请输入图片描述"
+              class="auto-height-textarea"
+              @bind:event="oninput"></textarea>
+</div>
+<p></p>
+<button class="btn btn-send" @onclick="GenerateImage">创建图片</button>&nbsp;&nbsp;
+
+
+
+
+@if (vm.ImageData.Length > 0)
+{
+    <button class="btn btn-dark" @onclick="vm.Declare">清空</button>
+    <p></p>
+    <img src="data:image/png;base64,@Convert.ToBase64String(vm.ImageData)" alt="Generated Image" />
+    @* <div>
+        <h4>Generated Image</h4>
+        <img src="data:image/png;base64,@Convert.ToBase64String(vm.ImageData)" alt="Generated Image" />
+        <button @onclick="DownloadImage">Download as PNG</button>
+        <button @onclick="DownloadImageAsJpg">Download as JPG</button>
+    </div> *@
+}
+
+<style>
+    /* 输入区域 */
+    .input-area {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    /* 文本框 */
+    .auto-height-textarea {
+        flex: 1;
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        resize: vertical;
+        min-height: 80px;
+        max-height: 200px;
+        overflow-y: auto;
+    }
+    /* 发送按钮 */
+    .btn-send {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+</style>
+
+@code {
+
+    private async Task GenerateImage()
+    {
+        await vm.GenerateImageAsync();
+    }
+
+    private void DownloadImage()
+    {
+        DownloadFile(vm.ImageData, "generated-image.png", "image/png");
+    }
+
+    private void DownloadImageAsJpg()
+    {
+        var jpgData = vm.ConvertToJpg(vm.ImageData);
+        DownloadFile(jpgData, "generated-image.jpg", "image/jpeg");
+    }
+
+    private void DownloadFile(byte[] data, string fileName, string mimeType)
+    {
+        var fileContent = new System.Net.Http.ByteArrayContent(data);
+        var fileStream = new System.IO.MemoryStream(data);
+        var js = JS.InvokeAsync<object>("saveAsFile", fileName, Convert.ToBase64String(data));
+
+        var base64Data = Convert.ToBase64String(data);
+        //await JS.InvokeAsync<object>(fileName, base64Data); // 使用 InvokeVoidAsync
+    }
+
+    protected override void OnInitialized()
+    {
+        // 通知更新UI事件处理函数
+        vm.UpdateUIEventHandler += UpdateUI;
+
+        vm.Declare();
+    }
+
+    // 更新UI
+    private async Task UpdateUI()
+    {
+        await InvokeAsync(() => StateHasChanged());
+    }
+
+
+    // 通知更新UI事件处理函数
+    private async void UpdateUI(object sender, EventArgs e)
+    {
+        await InvokeAsync(() => StateHasChanged());
+    }
+}

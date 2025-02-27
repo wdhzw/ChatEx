@@ -1,0 +1,208 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|e:\\01software\\mycode\\my\\learning\\blazor\\chatex\\chatex\\webapi\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|solutionrelative:chatex\\webapi\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|e:\\01software\\mycode\\my\\learning\\blazor\\chatex\\chatex\\webapi\\auth\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|solutionrelative:chatex\\webapi\\auth\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|e:\\01software\\mycode\\my\\learning\\blazor\\chatex\\chatex\\services\\deepseekservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|solutionrelative:chatex\\services\\deepseekservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|e:\\01software\\mycode\\my\\learning\\blazor\\chatex\\chatex\\models\\apiinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|solutionrelative:chatex\\models\\apiinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|e:\\01software\\mycode\\my\\learning\\blazor\\chatex\\chatex\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|solutionrelative:chatex\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|e:\\01software\\mycode\\my\\learning\\blazor\\chatex\\chatex\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|solutionrelative:chatex\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|e:\\01software\\mycode\\my\\learning\\blazor\\chatex\\chatex\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|solutionrelative:chatex\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|e:\\01software\\mycode\\my\\learning\\blazor\\chatex\\chatex\\services\\streamparserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|solutionrelative:chatex\\services\\streamparserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|e:\\01software\\mycode\\my\\learning\\blazor\\chatex\\chatex\\viewmodels\\chatexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|solutionrelative:chatex\\viewmodels\\chatexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|e:\\01software\\mycode\\my\\learning\\blazor\\chatex\\chatex\\components\\pages\\chatpages\\chatnewui.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|solutionrelative:chatex\\components\\pages\\chatpages\\chatnewui.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|e:\\01software\\mycode\\my\\learning\\blazor\\chatex\\chatex\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{121E08E6-5FEE-4EC3-ADDE-9FDBFF4659A8}|ChatEx\\ChatEx.csproj|solutionrelative:chatex\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeepSeekService.cs",
+              "DocumentMoniker": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\Services\\DeepSeekService.cs",
+              "RelativeDocumentMoniker": "ChatEx\\Services\\DeepSeekService.cs",
+              "ToolTip": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\Services\\DeepSeekService.cs",
+              "RelativeToolTip": "ChatEx\\Services\\DeepSeekService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAADgv1MAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T09:12:22.475Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\WebApi\\Auth\\AuthController.cs",
+              "RelativeDocumentMoniker": "ChatEx\\WebApi\\Auth\\AuthController.cs",
+              "ToolTip": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\WebApi\\Auth\\AuthController.cs",
+              "RelativeToolTip": "ChatEx\\WebApi\\Auth\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T11:16:07.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApiInfo.cs",
+              "DocumentMoniker": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\Models\\ApiInfo.cs",
+              "RelativeDocumentMoniker": "ChatEx\\Models\\ApiInfo.cs",
+              "ToolTip": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\Models\\ApiInfo.cs",
+              "RelativeToolTip": "ChatEx\\Models\\ApiInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T10:59:53.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "ChatEx\\appsettings.Development.json",
+              "ToolTip": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\appsettings.Development.json",
+              "RelativeToolTip": "ChatEx\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-26T10:33:51.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\appsettings.json",
+              "RelativeDocumentMoniker": "ChatEx\\appsettings.json",
+              "ToolTip": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\appsettings.json",
+              "RelativeToolTip": "ChatEx\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-26T10:29:39.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\WebApi\\ChatController.cs",
+              "RelativeDocumentMoniker": "ChatEx\\WebApi\\ChatController.cs",
+              "ToolTip": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\WebApi\\ChatController.cs",
+              "RelativeToolTip": "ChatEx\\WebApi\\ChatController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwFEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T12:08:01.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\Program.cs",
+              "RelativeDocumentMoniker": "ChatEx\\Program.cs",
+              "ToolTip": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\Program.cs",
+              "RelativeToolTip": "ChatEx\\Program.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAYwF4AAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T05:35:43.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StreamParserService.cs",
+              "DocumentMoniker": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\Services\\StreamParserService.cs",
+              "RelativeDocumentMoniker": "ChatEx\\Services\\StreamParserService.cs",
+              "ToolTip": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\Services\\StreamParserService.cs",
+              "RelativeToolTip": "ChatEx\\Services\\StreamParserService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwA0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T09:12:09.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ChatExViewModel.cs",
+              "DocumentMoniker": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\ViewModels\\ChatExViewModel.cs",
+              "RelativeDocumentMoniker": "ChatEx\\ViewModels\\ChatExViewModel.cs",
+              "ToolTip": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\ViewModels\\ChatExViewModel.cs",
+              "RelativeToolTip": "ChatEx\\ViewModels\\ChatExViewModel.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAIAzwDYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T08:48:24.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ChatNewUI.razor",
+              "DocumentMoniker": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\Components\\Pages\\ChatPages\\ChatNewUI.razor",
+              "RelativeDocumentMoniker": "ChatEx\\Components\\Pages\\ChatPages\\ChatNewUI.razor",
+              "ToolTip": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\Components\\Pages\\ChatPages\\ChatNewUI.razor",
+              "RelativeToolTip": "ChatEx\\Components\\Pages\\ChatPages\\ChatNewUI.razor",
+              "ViewState": "AgIAACYAAAAAAAAAAAAEwMQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-26T08:33:21.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ChatEx\\Properties\\launchSettings.json",
+              "ToolTip": "E:\\01Software\\mycode\\my\\Learning\\Blazor\\ChatEx\\ChatEx\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ChatEx\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-26T06:14:17.856Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

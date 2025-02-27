@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>E:\02Docker\docker-compose\pub\chatexpub</_PublishTargetUrl>
+    <History>True|2025-02-26T06:38:13.1334725Z||;True|2025-02-26T14:08:00.3374792+08:00||;True|2025-02-25T14:22:00.9810496+08:00||;True|2025-02-24T21:45:57.4889759+08:00||;True|2025-02-24T14:46:44.8460149+08:00||;True|2025-02-24T14:22:02.6626222+08:00||;True|2025-02-24T14:09:51.6008504+08:00||;True|2025-02-24T13:10:30.5607610+08:00||;True|2025-02-23T16:06:25.0087963+08:00||;True|2025-02-23T16:01:29.8077617+08:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

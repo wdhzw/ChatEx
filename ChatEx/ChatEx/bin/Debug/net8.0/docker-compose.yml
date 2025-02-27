@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+
+  demo:
+    container_name: chatex
+    image: chateximage
+    build:
+      context: /myhome/pub/chatexpub
+      dockerfile: Dockerfile
+    ports:
+      - "9000:9000"
+    environment:
+      #- ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_ENVIRONMENT=Development
+      - TZ=Asia/Shanghai
+      - RunOnDocker=true
+      - IntendedUse=debug
+      #- IsShengChan=true
+      #- "8950:8950"
+    #environment:
+      #- ASPNETCORE_ENVIRONMENT=Production
+      #- ASPNETCORE_ENVIRONMENT=Development
+      #- TZ=Asia/Shanghai
+      #- RunOnDocker=true
+      #- IntendedUse=debug
+      #- IsShengChan=true
+    #volumes:
+      #- ./data:/app/data
+      #- ./txtfile:/app/txtfile
+      #- ./binfile:/app/binfile
+#      - ./aspnetkeys:/root/.aspnet/DataProtection-Keys
+      #- ../vibestsharedata:/app/vibestsharedata
+    #networks:
+      #net1:
+        #ipv4_address: 172.30.0.32
+    restart: always
+
+#networks:
+  #net1:
+    #external:
+      #name: aednetwork
